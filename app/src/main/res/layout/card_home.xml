@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/home_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardBackgroundColor="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_title_home"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:scaleType="centerCrop"
+                android:src="@color/gray50" />
+
+            <TextView
+                android:id="@+id/txt_title_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_title_home"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/sf_pro_regular"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.1"
+                android:maxEms="50"
+                android:maxLines="2"
+                android:text="@string/lorem_long"
+                android:textAlignment="textStart"
+                android:textColor="@color/txtPrimary"
+                android:textSize="@dimen/txt_large"
+                tools:ignore="RtlCompat" />
+
+            <LinearLayout
+                android:id="@+id/linear_hd_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_title_home"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_categories_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_light"
+                    android:maxLines="1"
+                    android:text="@string/lorem_ipsum"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/txt_normal"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/txt_date_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/sf_pro_light"
+                    android:maxLines="1"
+                    android:text="@string/lorem_ipsum"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="true"
+                    android:textColor="@color/gray300"
+                    android:textSize="@dimen/txt_normal"
+                    tools:ignore="RtlCompat" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_desc_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear_hd_home"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/sf_pro_light"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.1"
+                android:maxEms="50"
+                android:maxLines="2"
+                android:text="@string/lorem_long"
+                android:textAlignment="textStart"
+                android:textColor="@color/gray500"
+                android:textSize="@dimen/txt_normal"
+                tools:ignore="RtlCompat" />
+
+            <View
+                android:id="@+id/view_card_home"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txt_desc_home"
+                android:layout_marginTop="20dp"
+                android:background="@color/gray200" />
+
+            <TextView
+                android:id="@+id/txt_comment_count_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txt_desc_home"
+                android:layout_alignStart="@+id/txt_desc_home"
+                android:layout_below="@+id/view_card_home"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_light"
+                android:letterSpacing="0.2"
+                android:text="@string/lorem_ipsum"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textColor="@color/gray500"
+                android:textSize="@dimen/txt_small"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/txt_author_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txt_comment_count_home"
+                android:layout_alignBottom="@+id/txt_comment_count_home"
+                android:layout_alignEnd="@+id/txt_desc_home"
+                android:layout_alignRight="@+id/txt_desc_home"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_light"
+                android:letterSpacing="0.2"
+                android:text="@string/lorem_ipsum"
+                android:textAlignment="viewEnd"
+                android:textAllCaps="true"
+                android:textColor="@color/gray500"
+                android:textSize="@dimen/txt_small"
+                tools:ignore="RtlCompat" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

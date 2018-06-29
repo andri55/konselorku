@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_view_penilaian"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="vertical"
+    tools:context=".Fragment.PenilaianFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            card_view:cardBackgroundColor="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_light"
+                    android:text="Yuk bersama kita saling menyayangi satu sama lain untuk Indonesia menjadi lebih baik!"
+                    android:textColor="@color/txtSecondary"
+                    android:textSize="@dimen/txt_normal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/gray200" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_nama_penilaian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="15"
+                    app:errorTextAppearance="@style/CounterOverFlow"
+                    app:counterOverflowTextAppearance="@style/CounterOverFlow">
+
+                    <EditText
+                        android:id="@+id/nama_penilaian"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/sf_pro_light"
+                        android:hint="Nama lengkap"
+                        android:inputType="textPersonName"
+                        android:textSize="@dimen/txt_normal" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/gray200" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/sf_pro_light"
+                    android:text="Jenis kelamin"
+                    android:textColor="@color/txtPrimary"
+                    android:textSize="@dimen/txt_normal" />
+
+                <RadioGroup
+                    android:id="@+id/kelamin_penilaian"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp">
+
+                    <RadioButton
+                        android:id="@+id/laki_penilaian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:fontFamily="@font/sf_pro_light"
+                        android:text="Laki-laki"
+                        android:textColor="@color/txtPrimary"
+                        android:textSize="@dimen/txt_normal" />
+
+                    <RadioButton
+                        android:id="@+id/perempuan_penilaian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/sf_pro_light"
+                        android:text="Perempuan"
+                        android:textColor="@color/txtPrimary"
+                        android:textSize="@dimen/txt_normal" />
+                </RadioGroup>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/gray200" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_sekolah_penilaian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorTextAppearance="@style/CounterOverFlow"
+                    android:layout_marginTop="15dp">
+
+                    <EditText
+                        android:id="@+id/sekolah_penilaian"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/sf_pro_light"
+                        android:hint="Asal sekolah"
+                        android:inputType="textPersonName"
+                        android:textSize="@dimen/txt_normal" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/gray200" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/sf_pro_light"
+                    android:text="Apa yang pernah kamu alami?"
+                    android:textColor="@color/txtPrimary"
+                    android:textSize="@dimen/txt_normal" />
+
+                <RadioGroup
+                    android:id="@+id/status_penilaian"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp">
+
+                    <RadioButton
+                        android:id="@+id/pelaku_penilaian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:fontFamily="@font/sf_pro_light"
+                        android:text="Pernah melakukan bullying (Pelaku)"
+                        android:textColor="@color/txtPrimary"
+                        android:textSize="@dimen/txt_normal" />
+
+                    <RadioButton
+                        android:id="@+id/korban_penilaian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/sf_pro_light"
+                        android:text="Pernah menjadi korban bullying (Korban)"
+                        android:textColor="@color/txtPrimary"
+                        android:textSize="@dimen/txt_normal" />
+                </RadioGroup>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/gray200" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_lokasi_penilaian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorTextAppearance="@style/CounterOverFlow"
+                    android:layout_marginTop="15dp">
+
+                    <EditText
+                        android:id="@+id/lokasi_penilaian"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/sf_pro_light"
+                        android:hint="Dimana lokasinya?"
+                        android:textSize="@dimen/txt_normal" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/gray200" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/sf_pro_light"
+                    android:text="Kapan waktu terjadinya?"
+                    android:textColor="@color/txtPrimary"
+                    android:textSize="@dimen/txt_normal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tgl_penilaian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sf_pro_light"
+                        android:text="@string/lorem_ipsum"
+                        android:textColor="@color/txtPrimary"
+                        android:textSize="@dimen/txt_normal" />
+
+                    <Button
+                        android:id="@+id/btn_tgl_penilaian"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/btn_blue"
+                        android:fontFamily="@font/sf_pro_light"
+                        android:text="SET DATE"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/txt_normal" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/gray200" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_kejadian_penilaian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorTextAppearance="@style/CounterOverFlow"
+                    android:layout_marginTop="15dp">
+
+                    <EditText
+                        android:id="@+id/kejadian_penilaian"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/sf_pro_light"
+                        android:hint="Ceritakan bagaimana kejadiannya?"
+                        android:textSize="@dimen/txt_normal" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/gray200" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_kesan_penilaian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorTextAppearance="@style/CounterOverFlow"
+                    android:layout_marginTop="15dp">
+
+                    <EditText
+                        android:id="@+id/kesan_penilaian"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/sf_pro_light"
+                        android:hint="Apa yang kamu rasakan setelah kejadian itu?"
+                        android:textSize="@dimen/txt_normal" />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_submit_penilaian"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_green"
+            android:fontFamily="@font/sf_pro_regular"
+            android:text="Submit"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_normal" />
+
+        <TextView
+            android:id="@+id/hasil_penilaian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_light"
+            android:textAlignment="textStart"
+            android:textColor="@color/txtSecondary"
+            android:textSize="@dimen/txt_normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="35dp" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

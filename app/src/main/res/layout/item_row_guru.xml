@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/anim_ripple_black"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="10dp">
+
+    <ImageView
+        android:id="@+id/img_foto_guru"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/txt_nama_guru"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_foto_guru"
+        android:ellipsize="end"
+        android:fontFamily="@font/sf_pro_light"
+        android:maxLines="1"
+        android:text="@string/lorem_ipsum"
+        android:textColor="@color/txtPrimary"
+        android:textSize="@dimen/txt_normal" />
+
+    <TextView
+        android:id="@+id/txt_sekolah_guru"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_nama_guru"
+        android:layout_toRightOf="@id/img_foto_guru"
+        android:ellipsize="end"
+        android:fontFamily="@font/sf_pro_light"
+        android:maxLines="1"
+        android:text="@string/lorem_ipsum"
+        android:textColor="@color/txtSecondary"
+        android:textSize="@dimen/txt_normal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/img_foto_guru"
+        android:background="@color/gray200" />
+
+</RelativeLayout>
